@@ -1,6 +1,8 @@
 pipeline {
   stage('prepare'){
-    // prepare...
+    steps {
+        sh 'mkdir -p build'
+    }
   }
 
   stage('build'){
