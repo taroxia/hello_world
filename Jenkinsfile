@@ -1,6 +1,7 @@
 pipeline {
   stage('prepare'){
     steps {
+        sh 'echo Start prepare.'
         sh 'mkdir -p build'
     }
   }
